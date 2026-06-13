@@ -37,8 +37,8 @@ search:
 # Comments - Gitalk
 gitalk:
   enable: true
-  clientID: # Your GitHub Application Client ID
-  clientSecret: # Your GitHub Application Client Secret
+  clientID: Ov23livn0q7Eoq0S11yJ
+  clientSecret: 6c003b48b9a84f4eaa2ff7b39d26077398440a52
   repo: GGnqfh.github.io
   owner: GGnqfh
   admin: GGnqfh
