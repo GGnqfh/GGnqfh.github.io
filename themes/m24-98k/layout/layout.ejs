@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="<%= config.language %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title><% if (page.title) { %><%= page.title %> - <% } %><%= config.title %></title>
+  <meta name="description" content="<%= config.description %>">
+  <meta name="keywords" content="<%= config.keywords %>">
+  <meta name="author" content="<%= config.author %>">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="<%= page.title || config.title %>">
+  <meta property="og:description" content="<%= config.description %>">
+  <meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>">
+  <meta property="og:url" content="<%= url %>">
+  <meta property="og:site_name" content="<%= config.title %>">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="<%= page.title || config.title %>">
+  <meta name="twitter:description" content="<%= config.description %>">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="<%= url %>">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="<%= url_for('/favicon.ico') %>">
+  
+  <!-- RSS -->
+  <% if (config.feed && config.feed.enable) { %>
+  <link rel="alternate" href="<%= url_for('/atom.xml') %>" title="<%= config.title %>" type="application/atom+xml">
+  <% } %>
+  
+  <!-- Styles -->
+  <%- css('css/style') %>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Search -->
+  <% if (theme.search && theme.search.enable) { %>
+  <link rel="search" type="application/opensearchdescription+xml" href="<%= url_for('/search.xml') %>" title="<%= config.title %>">
+  <% } %>
+</head>
+<body>
+  <%- partial('_partial/header') %>
+  
+  <main class="main">
+    <%- body %>
+  </main>
+  
+  <%- partial('_partial/footer') %>
+  
+  <!-- Scripts -->
+  <%- js('js/main') %>
+  
+  <!-- Gitalk Comments -->
+  <% if (theme.gitalk && theme.gitalk.enable && page.comments !== false) { %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '<%= theme.gitalk.clientID %>',
+      clientSecret: '<%= theme.gitalk.clientSecret %>',
+      repo: '<%= theme.gitalk.repo %>',
+      owner: '<%= theme.gitalk.owner %>',
+      admin: ['<%= theme.gitalk.admin %>'],
+      id: location.pathname,
+      distractionFreeMode: <%= theme.gitalk.distractionFreeMode %>
+    });
+    gitalk.render('gitalk-container');
+  </script>
+  <% } %>
+  
+  <!-- Search Script -->
+  <% if (theme.search && theme.search.enable) { %>
+  <script src="/js/search.js"></script>
+  <% } %>
+</body>
+</html>

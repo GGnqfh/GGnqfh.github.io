@@ -1,0 +1,81 @@
+# Theme Configuration
+## M24!98K! Theme for Hexo
+
+# Menu
+menu:
+  首页: /
+  归档: /archives
+  分类: /categories
+  标签: /tags
+  关于: /about
+
+# Site
+site:
+  logo: 
+  favicon: /favicon.ico
+
+# Social Links
+social:
+  github: https://github.com/GGnqfh
+
+# Footer
+footer:
+  since: 2024
+  copyright: GGnqfh
+
+# Post
+post:
+  toc: true
+  comments: true
+  share: true
+
+# Search
+search:
+  enable: true
+  placeholder: 搜索文章...
+
+# Comments - Gitalk
+gitalk:
+  enable: true
+  clientID: # Your GitHub Application Client ID
+  clientSecret: # Your GitHub Application Client Secret
+  repo: GGnqfh.github.io
+  owner: GGnqfh
+  admin: GGnqfh
+  distractionFreeMode: true
+
+# SEO
+seo:
+  google_site_verification: 
+  baidu_site_verification: 
+
+# Analytics
+analytics:
+  google: 
+  baidu: 
+
+# Styles
+style:
+  primary_color: "#c00"
+  secondary_color: "#333"
+  background_color: "#f5f5f5"
+  text_color: "#222"
+  link_color: "#c00"
+  font_family: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+
+# Weapons Gallery (恶搞特色)
+weapons:
+  enable: true
+  items:
+    - name: M24
+      image: https://game.gtimg.cn/images/gp/zlkdatasys/qiangxie/image/20201104/c19c3fc8ca63f7a6c341fa6fad49ae71.png
+      link: https://baike.baidu.com/item/M24%E7%8B%99%E5%87%BB%E6%AD%A5%E6%9E%AA/1922612
+    - name: 98K
+      image: https://game.gtimg.cn/images/gp/zlkdatasys/qiangxie/image/20201104/15f9d2f90e556552ad5b40b5cd3c9d66.png
+      link: https://baike.baidu.com/item/Kar98k%E6%AD%A5%E6%9E%AA/144785
+    - name: PP-野牛
+      image: https://game.gtimg.cn/images/gp/zlkdatasys/qiangxie/image/20201104/f5a5a5f9d1a8b7c3e4d6b2a1c0e8f3d9.png
+      link: https://baike.baidu.com/item/PP-19%E4%B9%8C%E7%89%9B%E7%8C%AA%E6%A0%BC%E6%9E%AA
+    - name: 内格夫
+      image: https://game.gtimg.cn/images/gp/zlkdatasys/qiangxie/image/20201104/9e3c7a2d5f8b1e6c4a9d0f3b2e7c8a1d.png
+      link: https://baike.baidu.com/item/%E5%86%85%E6%A0%BC%E5%A4%AB%E6%9E%AA

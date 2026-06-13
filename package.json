@@ -1,0 +1,39 @@
+{
+  "name": "hexo-site-m24-98k",
+  "version": "1.0.0",
+  "private": true,
+  "description": "M24!98K! - 狙击步枪俱乐部博客",
+  "scripts": {
+    "start": "hexo server",
+    "server": "hexo server",
+    "generate": "hexo generate",
+    "deploy": "hexo generate && hexo deploy",
+    "clean": "hexo clean",
+    "new": "hexo new post",
+    "new:page": "hexo new page",
+    "list": "hexo list",
+    "version": "hexo version"
+  },
+  "hexo": {
+    "version": "7.0.0"
+  },
+  "dependencies": {
+    "hexo": "^7.0.0",
+    "hexo-cli": "^4.3.1",
+    "hexo-deployer-git": "^4.0.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^3.0.0",
+    "hexo-generator-index": "^3.0.0",
+    "hexo-generator-search": "^2.4.3",
+    "hexo-generator-sitemap": "^3.0.1",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-stylus": "^3.0.0",
+    "hexo-server": "^3.0.0"
+  },
+  "devDependencies": {},
+  "author": "GGnqfh",
+  "license": "MIT"
+}

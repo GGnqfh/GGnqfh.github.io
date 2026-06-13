@@ -1,0 +1,9 @@
+{
+  "name": "hexo-theme-m24-98k",
+  "version": "1.0.0",
+  "description": "M24!98K! - 狙击步枪俱乐部主题",
+  "main": "index.js",
+  "scripts": {},
+  "author": "GGnqfh",
+  "license": "MIT"
+}

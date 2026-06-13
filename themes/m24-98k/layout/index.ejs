@@ -1,0 +1,61 @@
+<section class="home">
+  <!-- Banner -->
+  <div class="banner">
+    <h1 class="banner-title">M24! 98K!</h1>
+    <p class="banner-subtitle">狙击步枪俱乐部</p>
+  </div>
+  
+  <!-- Weapons Gallery -->
+  <% if (theme.weapons && theme.weapons.enable) { %>
+  <section class="weapons-gallery">
+    <h2 class="section-title">武器展示</h2>
+    <div class="gallery-grid">
+      <% theme.weapons.items.forEach(function(weapon) { %>
+      <div class="gallery-item">
+        <a href="<%= weapon.link %>" target="_blank" rel="noopener">
+          <img src="<%= weapon.image %>" alt="<%= weapon.name %>" loading="lazy">
+          <div class="caption"><%= weapon.name %>!</div>
+        </a>
+      </div>
+      <% }); %>
+    </div>
+  </section>
+  <% } %>
+  
+  <!-- Recent Posts -->
+  <section class="posts-section">
+    <h2 class="section-title">最新文章</h2>
+    <div class="posts-list">
+      <% page.posts.each(function(post) { %>
+      <article class="post-card">
+        <div class="post-meta">
+          <time datetime="<%= date(post.date, 'YYYY-MM-DD') %>"><%= date(post.date, 'YYYY-MM-DD') %></time>
+          <% if (post.categories && post.categories.length) { %>
+          <span class="category">
+            <a href="<%= url_for(post.categories.toArray()[0].path) %>"><%= post.categories.toArray()[0].name %></a>
+          </span>
+          <% } %>
+        </div>
+        <h3 class="post-title">
+          <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+        </h3>
+        <div class="post-excerpt">
+          <%= strip_html truncate(post.content, {length: 200}) %>
+        </div>
+        <div class="post-tags">
+          <% if (post.tags && post.tags.length) { %>
+          <% post.tags.forEach(function(tag) { %>
+          <a href="<%= url_for(tag.path) %>" class="tag"><%= tag.name %></a>
+          <% }); %>
+          <% } %>
+        </div>
+      </article>
+      <% }); %>
+    </div>
+    
+    <!-- Pagination -->
+    <% if (page.total > 1) { %>
+    <%- partial('_partial/pagination') %>
+    <% } %>
+  </section>
+</section>

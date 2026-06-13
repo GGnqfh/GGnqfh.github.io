@@ -1,0 +1,15 @@
+<section class="tag">
+  <header class="tag-header">
+    <h1 class="tag-title">标签</h1>
+    <p class="tag-count">共 <%= site.tags.length %> 个标签</p>
+  </header>
+  
+  <div class="tag-cloud">
+    <% site.tags.sort('name').each(function(tag) { %>
+    <a href="<%= url_for(tag.path) %>" class="tag-item" style="font-size: <%= Math.min(Math.max(tag.length, 1) * 0.2 + 0.8, 2) %>em">
+      <span class="tag-name">#<%= tag.name %></span>
+      <span class="tag-count"><%= tag.length %></span>
+    </a>
+    <% }); %>
+  </div>
+</section>

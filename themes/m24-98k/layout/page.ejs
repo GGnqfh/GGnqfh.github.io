@@ -1,0 +1,17 @@
+<article class="page">
+  <header class="page-header">
+    <h1 class="page-title"><%= page.title %></h1>
+  </header>
+  
+  <div class="page-content">
+    <%- page.content %>
+  </div>
+  
+  <!-- Comments -->
+  <% if (page.comments !== false && theme.gitalk && theme.gitalk.enable) { %>
+  <section class="comments">
+    <h3>评论</h3>
+    <div id="gitalk-container"></div>
+  </section>
+  <% } %>
+</article>

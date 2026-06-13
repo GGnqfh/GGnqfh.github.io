@@ -1,0 +1,17 @@
+<section class="category">
+  <header class="category-header">
+    <h1 class="category-title">分类</h1>
+    <p class="category-count">共 <%= site.categories.length %> 个分类</p>
+  </header>
+  
+  <div class="category-list">
+    <% site.categories.sort('name').each(function(cat) { %>
+    <div class="category-item">
+      <a href="<%= url_for(cat.path) %>">
+        <span class="category-name"><%= cat.name %></span>
+        <span class="category-count"><%= cat.length %> 篇</span>
+      </a>
+    </div>
+    <% }); %>
+  </div>
+</section>

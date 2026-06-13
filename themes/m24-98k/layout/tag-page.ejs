@@ -1,0 +1,20 @@
+<section class="tag-page">
+  <header class="tag-page-header">
+    <h1 class="tag-page-title">标签：<%= page.tag %></h1>
+    <p class="tag-page-count">共 <%= page.posts.length %> 篇文章</p>
+    <a href="<%= url_for('/tags') %>" class="back-link">← 返回所有标签</a>
+  </header>
+  
+  <div class="posts-list">
+    <% page.posts.sort('date', -1).each(function(post) { %>
+    <article class="post-card">
+      <div class="post-meta">
+        <time datetime="<%= date(post.date, 'YYYY-MM-DD') %>"><%= date(post.date, 'YYYY-MM-DD') %></time>
+      </div>
+      <h3 class="post-title">
+        <a href="<%= url_for(post.path) %>"><%= post.title %></a>
+      </h3>
+    </article>
+    <% }); %>
+  </div>
+</section>
