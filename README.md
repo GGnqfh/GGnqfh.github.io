@@ -43,7 +43,9 @@ GGnqfh.github.io/
 │   ├── _posts/          # 文章目录
 │   │   ├── welcome.md
 │   │   ├── m24-introduction.md
-│   │   └── kar98k-history.md
+│   │   ├── kar98k-history.md
+│   │   ├── pp19-bizon.md
+│   │   └── negev-introduction.md
 │   ├── about/           # 关于页面
 │   ├── categories/      # 分类页面
 │   ├── tags/            # 标签页面
@@ -66,8 +68,14 @@ GGnqfh.github.io/
 │       └── source/      # 主题资源
 │           ├── css/
 │           │   └ style.styl
-│           └── js/
-│               └ main.js
+│           ├── js/
+│           │   └ main.js
+│           └── images/    # 武器图片
+│               ├── pp19-bizon.jpg
+│               └── negev.jpg
+├── .github/
+│   └── workflows/
+│       └── deploy.yml    # GitHub Actions 自动部署
 ├── .gitignore
 └── README.md
 ```
@@ -115,22 +123,32 @@ hexo server
 
 ### 部署到 GitHub Pages
 
-1. **配置 Gitalk 评论系统**
+本项目使用 **GitHub Actions** 自动构建和部署。推送到 `main` 分支后会自动触发构建流程。
 
-在 `_config.yml` 中配置 Gitalk：
+**自动部署流程：**
+1. 推送代码到 `main` 分支
+2. GitHub Actions 自动安装依赖并运行 `hexo generate`
+3. 构建产物自动部署到 GitHub Pages
+
+**手动部署：**
+```bash
+npm run generate
+npm run deploy
+```
+
+### 配置 Gitalk 评论系统
+
+1. 在 [GitHub Developer Settings](https://github.com/settings/developers) 创建 OAuth App
+2. 回调 URL 设置为 `https://ggnqfh.github.io/`
+3. 在 `themes/m24-98k/_config.yml` 中配置：
 ```yaml
 gitalk:
   enable: true
-  clientID: 你的GitHub Application Client ID
-  clientSecret: 你的GitHub Application Client Secret
+  clientID: 你的Client ID
+  clientSecret: 你的Client Secret
   repo: GGnqfh.github.io
   owner: GGnqfh
   admin: GGnqfh
-```
-
-2. **生成并部署**
-```bash
-npm run deploy
 ```
 
 ## 文章管理
