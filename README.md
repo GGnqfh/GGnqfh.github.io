@@ -23,7 +23,7 @@
 
 ## 使用方法
 
-直接在浏览器中打开https://gghqfh.github.io/
+直接在浏览器中打开https://ggnqfh.github.io/
 
 ## 项目结构
 
