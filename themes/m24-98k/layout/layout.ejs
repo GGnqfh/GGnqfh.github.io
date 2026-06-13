@@ -70,6 +70,7 @@
       owner: '<%= theme.gitalk.owner %>',
       admin: ['<%= theme.gitalk.admin %>'],
       id: location.pathname,
+      redirectURI: window.location.origin + '/',
       distractionFreeMode: <%= theme.gitalk.distractionFreeMode %>
     });
     gitalk.render('gitalk-container');
