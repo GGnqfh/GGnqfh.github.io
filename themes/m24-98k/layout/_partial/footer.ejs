@@ -1,14 +1,20 @@
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-info">
-      <% 
-        var currentYear = new Date().getFullYear();
-        var sinceYear = theme.footer.since || currentYear;
-        var displayYear = sinceYear === currentYear ? sinceYear : sinceYear + '-' + currentYear;
-      %>
+      <% var sinceYear = theme.footer.since; %>
       <p class="copyright">
-        &copy; <%= displayYear %> <%= theme.footer.copyright || config.author %>
+        &copy; <span id="footer-year"><%= sinceYear %></span> <%= theme.footer.copyright || config.author %>
       </p>
+      <script>
+        (function() {
+          var sinceYear = <%= sinceYear %>;
+          var currentYear = new Date().getFullYear();
+          var yearSpan = document.getElementById('footer-year');
+          if (yearSpan) {
+            yearSpan.textContent = sinceYear === currentYear ? sinceYear : sinceYear + '-' + currentYear;
+          }
+        })();
+      </script>
       <p class="powered">
         Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
         | Theme <a href="https://github.com/GGnqfh" target="_blank" rel="noopener">M24!98K!</a>
