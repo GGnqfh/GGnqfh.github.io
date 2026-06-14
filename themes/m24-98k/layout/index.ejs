@@ -29,7 +29,7 @@
       <% page.posts.each(function(post) { %>
       <article class="post-card">
         <div class="post-meta">
-          <time datetime="<%= date(post.date, 'YYYY-MM-DD') %>"><%= date(post.date, 'YYYY-MM-DD') %></time>
+          <time datetime="<%= date(post.date, theme.date_format || 'YYYY-MM-DD') %>"><%= date(post.date, theme.date_format || 'YYYY-MM-DD') %></time>
           <% if (post.categories && post.categories.length) { %>
           <span class="category">
             <a href="<%= url_for(post.categories.toArray()[0].path) %>"><%= post.categories.toArray()[0].name %></a>

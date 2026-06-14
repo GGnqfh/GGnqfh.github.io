@@ -1,8 +1,13 @@
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-info">
+      <% 
+        var currentYear = new Date().getFullYear();
+        var sinceYear = theme.footer.since || currentYear;
+        var displayYear = sinceYear === currentYear ? sinceYear : sinceYear + '-' + currentYear;
+      %>
       <p class="copyright">
-        &copy; <%= theme.footer.since || date(Date.now(), 'YYYY') %> <%= theme.footer.copyright || config.author %>
+        &copy; <%= displayYear %> <%= theme.footer.copyright || config.author %>
       </p>
       <p class="powered">
         Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>

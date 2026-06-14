@@ -18,7 +18,7 @@
       <ul class="year-posts">
         <% years[year].forEach(function(post) { %>
         <li class="archive-post">
-          <time datetime="<%= date(post.date, 'YYYY-MM-DD') %>"><%= date(post.date, 'MM-DD') %></time>
+          <time datetime="<%= date(post.date, theme.date_format || 'YYYY-MM-DD') %>"><%= date(post.date, 'MM-DD') %></time>
           <a href="<%= url_for(post.path) %>"><%= post.title %></a>
           <% if (post.categories && post.categories.length) { %>
           <span class="category">

@@ -23,6 +23,10 @@ footer:
   since: 2024
   copyright: GGnqfh
 
+# Date format (遵循系统统一标准 YYYY-MM-DD HH:mm:ss)
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
 # Post
 post:
   toc: true
