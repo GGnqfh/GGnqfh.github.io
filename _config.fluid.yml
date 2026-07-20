@@ -37,25 +37,9 @@ index:
 # Post
 post:
   comments:
-    enable: true
-    type: gitalk
+    enable: false
   updated:
     enable: false
-
-# Gitalk
-gitalk:
-  clientID: Ov23livn0q7Eoq0S11yJ
-  clientSecret: 6c003b48b9a84f4eaa2ff7b39d26077398440a52
-  repo: GGnqfh.github.io
-  owner: GGnqfh
-  admin: ['GGnqfh']
-  language: zh-CN
-  labels: ['Gitalk']
-  perPage: 10
-  pagerDirection: last
-  distractionFreeMode: false
-  createIssueManually: true
-  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
 
 # About page
 about:
