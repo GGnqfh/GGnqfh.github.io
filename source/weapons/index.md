@@ -29,7 +29,7 @@ comments: false
   <div style="text-align: center; width: 280px; margin-bottom: 2rem;">
     <a href="https://baike.baidu.com/item/%E9%87%8E%E7%89%9B%E5%86%B2%E9%94%8B%E6%9E%AA/1338067" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
       <img src="/images/pp19-bizon.jpg" alt="PP-19 Bizon冲锋枪" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 1rem; transition: transform 0.3s ease;">
-      <div style="font-size: 1.75rem; font-weight: 700; color: #c00;">PP-19 Bizon!</div>
+      <div style="font-size: 1.75rem; font-weight: 700; color: #c00;">PP-野牛!</div>
       <div style="color: #666; font-size: 0.9rem;">冲锋枪</div>
     </a>
   </div>
@@ -37,7 +37,7 @@ comments: false
   <div style="text-align: center; width: 280px; margin-bottom: 2rem;">
     <a href="https://baike.baidu.com/item/%E5%86%85%E6%A0%BC%E5%A4%AB%E8%BD%BB%E6%9C%BA%E6%9E%AA" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
       <img src="/images/negev.jpg" alt="Negev轻机枪" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); margin-bottom: 1rem; transition: transform 0.3s ease;">
-      <div style="font-size: 1.75rem; font-weight: 700; color: #c00;">Negev!</div>
+      <div style="font-size: 1.75rem; font-weight: 700; color: #c00;">内格夫!</div>
       <div style="color: #666; font-size: 0.9rem;">轻机枪</div>
     </a>
   </div>
