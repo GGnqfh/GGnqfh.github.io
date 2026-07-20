@@ -1,0 +1,108 @@
+# Hexo Fluid Theme Config
+
+# Favicon
+favicon: /img/default.png
+
+# Navbar
+navbar:
+  blog_title: "M24!98K!"
+  menu:
+    - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { name: "武器展示", link: "/weapons/", icon: "iconfont icon-tag-fill" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+
+# Search
+search:
+  enable: true
+  path: /local-search.xml
+  field: post
+  content: true
+  top_per_page: 10
+  preload: true
+
+# Index page
+index:
+  banner_img: /img/default.png
+  banner_img_height: 85
+  banner_mask_alpha: 0.3
+  slogan:
+    enable: true
+    text: "狙击步枪俱乐部"
+  auto_excerpt:
+    enable: true
+
+# Post
+post:
+  comments:
+    enable: true
+    type: gitalk
+  updated:
+    enable: false
+
+# Gitalk
+gitalk:
+  clientID: Ov23livn0q7Eoq0S11yJ
+  clientSecret: 6c003b48b9a84f4eaa2ff7b39d26077398440a52
+  repo: GGnqfh.github.io
+  owner: GGnqfh
+  admin: ['GGnqfh']
+  language: zh-CN
+  labels: ['Gitalk']
+  perPage: 10
+  pagerDirection: last
+  distractionFreeMode: false
+  createIssueManually: true
+  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
+
+# About page
+about:
+  enable: true
+  banner_img: /img/default.png
+  banner_img_height: 50
+  avatar: /images/pp19-bizon.jpg
+  name: GGnqfh
+  bio: 一个喜欢狙击步枪（游戏中的）的普通玩家
+  social_icons:
+    - { icon: "iconfont icon-github", link: "https://github.com/GGnqfh" }
+
+# Category page
+category:
+  enable: true
+  banner_img: /img/default.png
+
+# Tag page
+tag:
+  enable: true
+  banner_img: /img/default.png
+
+# Archive page
+archive:
+  banner_img: /img/default.png
+
+# 404 page
+page404:
+  enable: true
+  banner_img: /img/default.png
+  banner_img_height: 85
+  banner_mask_alpha: 0.3
+  title: 页面未找到
+  subtitle: 抱歉，您访问的页面不存在
+  redirect: 5000
+
+# Footer
+footer:
+  content: '
+    <a href="https://github.com/GGnqfh" target="_blank" rel="nofollow noopener"><span>GGnqfh</span></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://fluid-dev.github.io/" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+  '
+  copyright: true
+
+# Canonical
+canonical:
+  enable: false
