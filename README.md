@@ -230,7 +230,6 @@ CSS 变量：
 
 ## 特别感谢
 
-Thanks to HJY
 
 ## 许可证
 

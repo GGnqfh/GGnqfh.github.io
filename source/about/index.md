@@ -19,7 +19,3 @@ comments: true
 ## 联系方式
 
 - GitHub: [GGnqfh](https://github.com/GGnqfh)
-
-## 特别感谢
-
-Thanks to HJY
