@@ -12,10 +12,6 @@ comments: true
 
 ⚠️ **请注意：这是一个恶搞网页，仅用于娱乐目的！**
 
-## 关于作者
-
-我是 GGnqfh，一个喜欢狙击步枪（游戏中的）的普通玩家。
-
 ## 联系方式
 
 - GitHub: [GGnqfh](https://github.com/GGnqfh)

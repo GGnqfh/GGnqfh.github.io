@@ -49,8 +49,8 @@ about:
   avatar: /images/pp19-bizon.jpg
   name: GGnqfh
   bio: 一个喜欢狙击步枪（游戏中的）的普通玩家
-  social_icons:
-    - { icon: "iconfont icon-github", link: "https://github.com/GGnqfh" }
+  icons:
+    - { class: "iconfont icon-github-fill", link: "https://github.com/GGnqfh", tip: "GitHub" }
 
 # Category page
 category:
