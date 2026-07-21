@@ -1,12 +1,11 @@
 ---
-title: 武器展示
+title: M24! 98K!
 type: page
 comments: false
 ---
 
 <div style="text-align: center; margin: 2rem 0;">
-  <h2>武器收藏</h2>
-  <p>精选狙击步枪与轻武器！</p>
+  <h2>M24! 98K!</h2>
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center; padding: 2rem 0;">
