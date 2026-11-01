@@ -15,8 +15,9 @@
 
 | 路径 | 说明 |
 |---|---|
-| `source/_posts/*.md` | 文章正文，新文章写这里 |
-| `source/weapons/` | 武器图集页（标题 `M24! 98K!`） |
+| `source/_posts/*.md` | 文章正文，新文章写这里（博文列表位于 `/posts/`） |
+| `source/index.md` | 首页（武器图集展示，标题 `M24! 98K!`） |
+| `source/weapons/` | 武器图集兼容页 |
 | `source/about/` | 关于页（联系方式） |
 | `source/archives/`、`source/categories/`、`source/tags/` | Hexo 生成的归档/分类/标签页 |
 | `source/images/` | 配图资源 |

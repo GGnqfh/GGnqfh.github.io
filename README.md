@@ -17,8 +17,8 @@
 
 ## 功能特性
 
-- 🎯 武器展示画廊（`/weapons/`）
-- 📝 支持 Markdown 格式文章与代码高亮
+- 🎯 武器展示首页（直达 `M24! 98K!` 图集画廊）
+- 📝 支持 Markdown 格式文章与代码高亮（博文流位于 `/posts/`）
 - 📂 分类与标签检索系统
 - 🔍 本地文章全局搜索功能（Local Search）
 - 📱 响应式设计与深浅色模式切换
@@ -44,6 +44,7 @@ GGnqfh.github.io/
 │   └── page.md
 ├── source/              # 博客源文件
 │   ├── _posts/          # 文章目录（Markdown 文件）
+│   ├── index.md         # 首页（武器图集页面）
 │   ├── about/           # 关于页面
 │   ├── weapons/         # 武器图集页面
 │   └── images/          # 本地武器配图资源

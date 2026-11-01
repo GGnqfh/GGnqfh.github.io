@@ -8,10 +8,10 @@ navbar:
   blog_title: "M24!98K!"
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
+    - { name: "文章", link: "/posts/", icon: "iconfont icon-articles" }
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { name: "武器展示", link: "/weapons/", icon: "iconfont icon-tag-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
 
 # Search
