@@ -101,10 +101,12 @@ theme: fluid
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
-  type: git
-  repo: https://github.com/GGnqfh/GGnqfh.github.io.git
-  branch: main
+## 本项目通过 GitHub Actions 自动构建部署至 GitHub Pages，无需本地执行 hexo deploy。
+## 注释以下配置以防止误执行 hexo deploy 将 public 覆盖推送到 main 分支。
+# deploy:
+#   type: git
+#   repo: https://github.com/GGnqfh/GGnqfh.github.io.git
+#   branch: main
 
 
 

@@ -7,7 +7,7 @@
     "start": "hexo server",
     "server": "hexo server",
     "generate": "hexo generate",
-    "deploy": "hexo generate && hexo deploy",
+    "deploy": "echo \"错误：不要手动部署！请直接 git push 到 main 分支，由 GitHub Actions 自动构建并发布到 GitHub Pages。\" && exit 1",
     "clean": "hexo clean",
     "new": "hexo new post",
     "new:page": "hexo new page",
